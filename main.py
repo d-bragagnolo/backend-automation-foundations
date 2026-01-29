@@ -1,9 +1,7 @@
-numbers = [10, 20, 30, 40, 50]
+def hours_to_seconds(hours):
+    return hours * 3600
 
-total = sum(numbers)
-count = len(numbers)
-average = total / count
+test_hours = [1, 2, 5, 10]
 
-print(f"Items: {count}")
-print(f"Total: {total}")
-print(f"Average: {average}")
+for h in test_hours:
+    print(f"{h} hours is {hours_to_seconds(h)} seconds")
