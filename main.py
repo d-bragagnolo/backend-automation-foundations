@@ -16,3 +16,20 @@ print("\n--- Debugging practice ---\n")
 # for x, y in numbers:
 #     print(divide(x, y))
 
+def exercise_1(numbers):
+    total = 0
+    count = 0
+
+    for n in numbers:
+        total = total + n
+        count = count + 1
+
+    return total / count
+    
+test_numbers_1 = [
+    [25, 4, 6],
+    [8, 23, 14, 25]
+]
+
+for case in test_numbers_1:
+    print(exercise_1(case))
